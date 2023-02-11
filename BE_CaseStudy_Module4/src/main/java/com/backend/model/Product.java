@@ -14,11 +14,16 @@ public class Product {
    private Long id;
    private String name;
    private String description;
+   @ManyToOne
    private ProductStatus productStatus;
    private Double price;
    @ManyToOne
    private Category category;
-   @OneToMany()
-   private List<Image> images = new ArrayList<>();
+
+
+
+
+//   @OneToMany()
+//   private List<Image> images = new ArrayList<>();
 
 }

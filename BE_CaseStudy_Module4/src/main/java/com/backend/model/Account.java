@@ -16,9 +16,10 @@ public class Account {
     private String passWord;
     private String fullName;
     private String email;
-    private String adress;
+    private String address;
     private String phoneNumber;
-    @OneToOne()
-    private Image avatar;
+    private String avatar;
+
+    @ManyToOne
     private Role role;
 }

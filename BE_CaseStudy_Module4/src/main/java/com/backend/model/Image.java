@@ -10,9 +10,9 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String url;
-    private boolean isAvatar;
+
     @ManyToOne
     private Product product;
 
-    // Getters and setters
+
 }
